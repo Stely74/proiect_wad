@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundWave - Sign Up</title>
+    <style>
+        :root {
+            --primary: #1DB954;
+            --dark: #121212;
+            --light: #f5f5f5;
+            --gray: #2c2c2c;
+            --light-gray: #b3b3b3;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background-color: black;
+            border-radius: 8px;
+            width: 450px;
+            padding: 40px;
+        }
+        .logo {
+            color: var(--primary);
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo i {
+            margin-right: 10px;
+        }
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .form-group input {
+            padding: 12px;
+            border-radius: 4px;
+            border: none;
+            background-color: var(--gray);
+            color: var(--light);
+            font-size: 16px;
+        }
+        .signup-button {
+            background-color: var(--primary);
+            color: black;
+            border: none;
+            padding: 12px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .signup-button:hover {
+            background-color: #1ed760;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            color: var(--light-gray);
+            font-size: 14px;
+        }
+        .login-link a {
+            color: var(--light);
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="logo">
+            <i class="fas fa-wave-square"></i>
+            <span>SoundWave</span>
+        </div>
+        
+        <form class="signup-form" onsubmit="event.preventDefault(); window.location.href='homepage.html';">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            
+            <button type="submit" class="signup-button">SIGN UP</button>
+        </form>
+        
+        <div class="login-link">
+            Already have an account? <a href="loginpage.html">Log in</a>
+        </div>
+    </div>
+</body>
+</html>

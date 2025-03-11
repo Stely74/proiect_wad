@@ -1,0 +1,575 @@
+<!-- PLAYLIST PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeloStream - Playlist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Melo<span>Stream</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="search.html"><i class="fas fa-search"></i><span>Search</span></a></li>
+            <li><a href="library.html" class="active"><i class="fas fa-book"></i><span>Your Library</span></a></li>
+        </ul>
+        <div class="your-library">
+            <h2>YOUR PLAYLISTS</h2>
+            <div class="create-playlist">
+                <div class="plus-icon">+</div>
+                <span>Create Playlist</span>
+            </div>
+            <ul class="playlists">
+                <li><a href="playlist.html">Chill Vibes</a></li>
+                <li><a href="playlist.html">Workout Mix</a></li>
+                <li><a href="playlist.html">Study Focus</a></li>
+                <li><a href="playlist.html">Road Trip Playlist</a></li>
+                <li><a href="playlist.html">Throwback Hits</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <div class="navigation-buttons">
+                <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="user-menu">
+                <div class="user-avatar"></div>
+                <div class="user-name">John Doe</div>
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+
+        <div class="playlist-header">
+            <div class="playlist-cover"></div>
+            <div class="playlist-info">
+                <div class="playlist-type">PLAYLIST</div>
+                <h1 class="playlist-title">Chill Vibes</h1>
+                <div class="playlist-description">Perfect for relaxing and unwinding after a long day.</div>
+                <div class="playlist-meta">
+                    <span class="playlist-owner">Created by John Doe</span>
+                    <span class="playlist-songs">36 songs, 2 hr 15 min</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="playlist-controls">
+            <button class="play-all-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="like-btn"><i class="far fa-heart"></i></button>
+            <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+
+        <div class="tracks-container">
+            <div class="tracks-header">
+                <div class="track-number">#</div>
+                <div class="track-title-header">TITLE</div>
+                <div class="track-album-header">ALBUM</div>
+                <div class="track-date-added">DATE ADDED</div>
+                <div class="track-duration"><i class="far fa-clock"></i></div>
+            </div>
+            
+            <div class="tracks-list">
+                <!-- Track 1 -->
+                <div class="track-item">
+                    <div class="track-number">1</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Ocean Waves</div>
+                        <div class="track-artist">Ambient Sounds</div>
+                    </div>
+                    <div class="track-album">Nature Sounds Vol. 2</div>
+                    <div class="track-date">2 weeks ago</div>
+                    <div class="track-duration">3:45</div>
+                </div>
+                
+                <!-- Track 2 -->
+                <div class="track-item">
+                    <div class="track-number">2</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Sunset Boulevard</div>
+                        <div class="track-artist">Chill Wave</div>
+                    </div>
+                    <div class="track-album">Summer Nights</div>
+                    <div class="track-date">3 weeks ago</div>
+                    <div class="track-duration">4:12</div>
+                </div>
+                
+                <!-- More tracks -->
+                <!-- Track 3 -->
+                <div class="track-item">
+                    <div class="track-number">3</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Café Ambience</div>
+                        <div class="track-artist">Lofi Study</div>
+                    </div>
+                    <div class="track-album">Study Beats</div>
+                    <div class="track-date">1 month ago</div>
+                    <div class="track-duration">5:28</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="now-playing-bar">
+        <div class="current-track">
+            <div class="current-track-img"></div>
+            <div class="current-track-info">
+                <div class="current-track-name">Ocean Waves</div>
+                <div class="current-track-artist">Ambient Sounds</div>
+            </div>
+            <i class="far fa-heart"></i>
+        </div>
+        
+        <div class="player-controls">
+            <div class="control-buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <div class="play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-time">1:15</div>
+                <div class="progress-track">
+                    <div class="progress-current"></div>
+                </div>
+                <div class="progress-time">3:45</div>
+            </div>
+        </div>
+        
+        <div class="volume-controls">
+            <i class="fas fa-list volume-icon"></i>
+            <i class="fas fa-volume-up volume-icon"></i>
+            <div class="volume-bar">
+                <div class="volume-level"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- ARTIST PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeloStream - Artist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Melo<span>Stream</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="search.html"><i class="fas fa-search"></i><span>Search</span></a></li>
+            <li><a href="library.html"><i class="fas fa-book"></i><span>Your Library</span></a></li>
+        </ul>
+        <div class="your-library">
+            <h2>YOUR PLAYLISTS</h2>
+            <div class="create-playlist">
+                <div class="plus-icon">+</div>
+                <span>Create Playlist</span>
+            </div>
+            <ul class="playlists">
+                <li><a href="playlist.html">Chill Vibes</a></li>
+                <li><a href="playlist.html">Workout Mix</a></li>
+                <li><a href="playlist.html">Study Focus</a></li>
+                <li><a href="playlist.html">Road Trip Playlist</a></li>
+                <li><a href="playlist.html">Throwback Hits</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <div class="navigation-buttons">
+                <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="user-menu">
+                <div class="user-avatar"></div>
+                <div class="user-name">John Doe</div>
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+
+        <div class="artist-header">
+            <div class="artist-cover"></div>
+            <div class="artist-info">
+                <div class="artist-verified"><i class="fas fa-check-circle"></i> Verified Artist</div>
+                <h1 class="artist-name">Chill Wave</h1>
+                <div class="artist-meta">
+                    <span class="monthly-listeners">2.5M monthly listeners</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="artist-controls">
+            <button class="play-all-btn"><i class="fas fa-play"></i> Play</button>
+            <button class="follow-btn">FOLLOW</button>
+            <button class="more-btn"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+
+        <div class="artist-popular">
+            <h2>Popular</h2>
+            
+            <div class="tracks-list">
+                <!-- Track 1 -->
+                <div class="track-item">
+                    <div class="track-number">1</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Sunset Boulevard</div>
+                        <div class="track-artist">235,412,890 plays</div>
+                    </div>
+                    <div class="track-album">Summer Nights</div>
+                    <div class="track-duration">4:12</div>
+                </div>
+                
+                <!-- Track 2 -->
+                <div class="track-item">
+                    <div class="track-number">2</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Midnight Drive</div>
+                        <div class="track-artist">189,321,456 plays</div>
+                    </div>
+                    <div class="track-album">Urban Pulse</div>
+                    <div class="track-duration">3:58</div>
+                </div>
+                
+                <!-- Track 3 -->
+                <div class="track-item">
+                    <div class="track-number">3</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Crystal Waters</div>
+                        <div class="track-artist">142,987,325 plays</div>
+                    </div>
+                    <div class="track-album">Aqua Dreams</div>
+                    <div class="track-duration">5:03</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="artist-discography">
+            <div class="discography-header">
+                <h2>Discography</h2>
+                <a href="#" class="see-all">See all</a>
+            </div>
+            
+            <div class="discography-filter">
+                <button class="filter-btn active">Popular releases</button>
+                <button class="filter-btn">Albums</button>
+                <button class="filter-btn">Singles and EPs</button>
+            </div>
+            
+            <div class="album-grid">
+                <!-- Album 1 -->
+                <div class="album-card">
+                    <div class="album-img"></div>
+                    <div class="album-title">Summer Nights</div>
+                    <div class="album-year">2023 • Album</div>
+                </div>
+                
+                <!-- Album 2 -->
+                <div class="album-card">
+                    <div class="album-img"></div>
+                    <div class="album-title">Urban Pulse</div>
+                    <div class="album-year">2022 • Album</div>
+                </div>
+                
+                <!-- Album 3 -->
+                <div class="album-card">
+                    <div class="album-img"></div>
+                    <div class="album-title">Aqua Dreams</div>
+                    <div class="album-year">2021 • Album</div>
+                </div>
+                
+                <!-- Album 4 -->
+                <div class="album-card">
+                    <div class="album-img"></div>
+                    <div class="album-title">Neon City</div>
+                    <div class="album-year">2020 • Album</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fans-also-like">
+            <div class="section-header">
+                <h2>Fans also like</h2>
+                <a href="#" class="see-all">See all</a>
+            </div>
+            
+            <div class="artist-grid">
+                <!-- Similar Artist 1 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Lofi Study</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+                
+                <!-- Similar Artist 2 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Ambient Sounds</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+                
+                <!-- Similar Artist 3 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Synth Wave</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+                
+                <!-- Similar Artist 4 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Dream Pop</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="now-playing-bar">
+        <div class="current-track">
+            <div class="current-track-img"></div>
+            <div class="current-track-info">
+                <div class="current-track-name">Sunset Boulevard</div>
+                <div class="current-track-artist">Chill Wave</div>
+            </div>
+            <i class="far fa-heart"></i>
+        </div>
+        
+        <div class="player-controls">
+            <div class="control-buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <div class="play-btn">
+                    <i class="fas fa-play"></i>
+                </div>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-time">2:05</div>
+                <div class="progress-track">
+                    <div class="progress-current"></div>
+                </div>
+                <div class="progress-time">4:12</div>
+            </div>
+        </div>
+        
+        <div class="volume-controls">
+            <i class="fas fa-list volume-icon"></i>
+            <i class="fas fa-volume-up volume-icon"></i>
+            <div class="volume-bar">
+                <div class="volume-level"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- USER PROFILE PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeloStream - Your Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Melo<span>Stream</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="search.html"><i class="fas fa-search"></i><span>Search</span></a></li>
+            <li><a href="library.html"><i class="fas fa-book"></i><span>Your Library</span></a></li>
+        </ul>
+        <div class="your-library">
+            <h2>YOUR PLAYLISTS</h2>
+            <div class="create-playlist">
+                <div class="plus-icon">+</div>
+                <span>Create Playlist</span>
+            </div>
+            <ul class="playlists">
+                <li><a href="playlist.html">Chill Vibes</a></li>
+                <li><a href="playlist.html">Workout Mix</a></li>
+                <li><a href="playlist.html">Study Focus</a></li>
+                <li><a href="playlist.html">Road Trip Playlist</a></li>
+                <li><a href="playlist.html">Throwback Hits</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="topbar">
+            <div class="navigation-buttons">
+                <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="user-menu">
+                <div class="user-avatar"></div>
+                <div class="user-name">John Doe</div>
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+
+        <div class="profile-header">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <div class="profile-type">PROFILE</div>
+                <h1 class="profile-name">John Doe</h1>
+                <div class="profile-meta">
+                    <span class="profile-playlists">5 Public Playlists</span>
+                    <span class="profile-followers">243 Followers</span>
+                    <span class="profile-following">56 Following</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-nav">
+            <button class="profile-nav-btn active">Overview</button>
+            <button class="profile-nav-btn">Playlists</button>
+            <button class="profile-nav-btn">Artists</button>
+            <button class="profile-nav-btn">Podcasts</button>
+        </div>
+
+        <div class="top-artists-section">
+            <div class="section-header">
+                <h2>Top artists this month</h2>
+                <span class="section-subheader">Only visible to you</span>
+            </div>
+            
+            <div class="artist-grid">
+                <!-- Top Artist 1 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Chill Wave</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+                
+                <!-- Top Artist 2 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Lofi Study</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+                
+                <!-- Top Artist 3 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Ambient Sounds</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+                
+                <!-- Top Artist 4 -->
+                <div class="artist-card">
+                    <div class="artist-img circular"></div>
+                    <div class="artist-name-card">Jazz Ensemble</div>
+                    <div class="artist-type">Artist</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="top-tracks-section">
+            <div class="section-header">
+                <h2>Top tracks this month</h2>
+                <span class="section-subheader">Only visible to you</span>
+            </div>
+            
+            <div class="tracks-list">
+                <!-- Track 1 -->
+                <div class="track-item">
+                    <div class="track-number">1</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Sunset Boulevard</div>
+                        <div class="track-artist">Chill Wave</div>
+                    </div>
+                    <div class="track-album">Summer Nights</div>
+                    <div class="track-duration">4:12</div>
+                </div>
+                
+                <!-- Track 2 -->
+                <div class="track-item">
+                    <div class="track-number">2</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Café Ambience</div>
+                        <div class="track-artist">Lofi Study</div>
+                    </div>
+                    <div class="track-album">Study Beats</div>
+                    <div class="track-duration">5:28</div>
+                </div>
+                
+                <!-- Track 3 -->
+                <div class="track-item">
+                    <div class="track-number">3</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Ocean Waves</div>
+                        <div class="track-artist">Ambient Sounds</div>
+                    </div>
+                    <div class="track-album">Nature Sounds Vol. 2</div>
+                    <div class="track-duration">3:45</div>
+                </div>
+                
+                <!-- Track 4 -->
+                <div class="track-item">
+                    <div class="track-number">4</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Midnight Jazz</div>
+                        <div class="track-artist">Jazz Ensemble</div>
+                    </div>
+                    <div class="track-album">Late Night Sessions</div>
+                    <div class="track-duration">6:32</div>
+                </div>
+                
+                <!-- Track 5 -->
+                <div class="track-item">
+                    <div class="track-number">5</div>
+                    <i class="fas fa-play play-icon"></i>
+                    <div class="track-img"></div>
+                    <div class="track-info">
+                        <div class="track-title">Crystal Waters</div>
+                        <div class="track-artist">Chill Wave</div>
+                    </div>
+                    <div class="track-album">Aqua Dreams</div>
+                    <div class="track-duration">5:03</div>
+                </div>
+            </div>
+        </div>
